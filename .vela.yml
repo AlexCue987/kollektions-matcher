@@ -1,0 +1,30 @@
+version: "1"
+
+templates:
+  - name: template-name
+    source: git.target.com/Transportation-DMO/vela-templates/jvmlibrary/template.yml@main
+    type: github
+
+steps:
+  - name: template
+    template:
+      name: template-name
+        
+secrets:
+  - name: cache_s3_access_key
+    key:  vela/prod-secrets/cache_s3_access_key
+    type: shared
+  - name: cache_s3_secret_key
+    key:  vela/prod-secrets/cache_s3_secret_key
+    type: shared
+  - name: cache_s3_server
+    key:  vela/prod-secrets/cache_s3_server
+    type: shared
+  - name: artifactory_username
+    key: Transportation-DMO/artifactory_username
+    engine: native
+    type: org
+  - name: artifactory_password
+    key: Transportation-DMO/artifactory_password
+    engine: native
+    type: org
