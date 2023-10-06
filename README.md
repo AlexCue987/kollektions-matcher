@@ -1,10 +1,10 @@
-## About Test-Helpers
+## About Kollektion-Matchers
 
-* Compare lists, maps, and sets, and produce easy-to-read output. Should be used with JUnit5 and kotlin-test.
+* Compare lists, maps, and sets, and produce easy-to-read output - it's especially useful when elements have many fields. Should be used with JUnit5 and kotest.
 * No more time-consuming scrolling left and right to figure out what exactly is different.
 
 
-Comparing collections of short strings via JUnit and/or Hamkrest is entirely feasible, and for those there is no need for any improvements.
+Comparing collections of short strings or numbers via JUnit and/or Kotest is entirely feasible, and for those there is no need for any improvements.
 However, in real life we often need to compare collections of wide objects with multiple fields, and with more elements. This is when we start spending too much time scrolling output like the following test using JUnit, Step3_Lists.whatIsInconvenient():
 
 ```
